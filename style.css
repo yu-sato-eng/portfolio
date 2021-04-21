@@ -1,0 +1,362 @@
+/* CSS Document */
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Dosis', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック";
+  word-break: break-all;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover{
+  opacity: .6;
+  transition: all .3s;
+}
+
+img{
+  max-width: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+#wrapper {
+  background-color: #ddd;
+}
+
+.inner {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* header */
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background: url(images/header.jpg) center;
+}
+#header .logo {
+  display: block;
+}
+#header .logo-title {
+  font-size: 100px;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+#header .logo-desc {
+  display: block;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* glovalNavi */
+#gnav {
+  padding: 10px;
+}
+#gnav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#gnav li {
+  padding: 0 20px;
+}
+#gnav li a {
+  color: #333;
+}
+
+/* section */
+.section .inner {
+  padding: 50px 10px 10px 0px;
+}
+.section .section-title-block {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section .section-title {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #444;
+}
+.section .section-desc {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* column */
+.column-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.column-image {
+  width: 33%;
+}
+.column-image img {
+  margin: 0 auto;
+}
+.column-desc {
+  width: 62%;
+}
+
+/* profile */
+
+
+/* skill */
+#skill .card-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#skill .card {
+  flex-basis: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+#skill .skill-desc {
+  flex-basis: calc(100% - 75px - 30px);
+  text-align: center;
+}
+#skill .skill-desc-title {
+  margin-bottom: 3px;
+  font-size:26px;
+  padding: 24px;
+  font-weight: bold;
+}
+
+/* skill-rate */
+#skill .rate {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 20px;
+  font-size: 20px;
+}
+#skill .rate:before, #skill .rate:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
+#skill .rate:before {
+  color: #ddd;
+}
+#skill .rate:after {
+  color: #444;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#skill .rate1:after {
+  width: 20px;
+}
+#skill .rate2:after {
+  width: 40px;
+}
+#skill .rate3:after {
+  width: 60px;
+}
+#skill .rate4:after {
+  width: 80px;
+}
+#skill .rate5:after {
+  width: 100px;
+}
+
+/* works */
+#works .card-wrapper {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#works .card {
+  width: 45%;
+  margin-bottom: 50px;
+}
+#works .card-image {
+  display: block;
+  margin-bottom: 8px;
+  height: 260px;
+}
+#works .card-caption {
+  text-align: center;
+}
+#works .card-caption-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+#works .card-caption-info {
+  font-size: 12px;
+}
+#works .card-caption-url {
+  font-size: 12px;
+}
+
+/* footer */
+#footer {
+  background-color: #333;
+}
+#footer .inner {
+  padding: 30px;
+}
+#footer .footer-link ul {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#footer .footer-link li {
+  font-size: 12px;
+  padding: 0 20px;
+}
+#footer .footer-link li a {
+  color: #fff;
+  font-weight: bold;
+}
+#footer .copyright {
+  font-size: 10px;
+  color: #8c8c8c;
+  text-align: center;
+}
+
+/*media Queries 767
+----------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  #header {
+    height: 200px;
+  }
+  #header .logo-title {
+    font-size: 56px;
+  }
+  #header .logo-desc {
+    font-size: 11px;
+  }
+
+  #gnav li {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  #gnav li a:hover {
+    opacity: 1;
+  }
+   
+  .table{
+    text-align: center;
+  }
+
+  #contents {
+    padding: 40px 0;
+  }
+  .section .inner {
+    padding: 30px 15px;
+  }
+  .section .section-title-block {
+    margin-bottom: 10px;
+  }
+  .section .section-title {
+    font-size: 36px;
+  }
+
+  #profile .column-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  #profile .column-image {
+    width: 50%;
+    margin: 0 auto 20px;
+  }
+  #profile .column-desc {
+   width: 100%;
+  }
+  .profile img {
+    border-radius: 50%;
+  }
+
+  #skill .card-wrapper {
+    width: 100%;
+  }
+  #skill .card {
+    flex-basis: 100%;
+  }
+  #skill .skill-desc {
+    flex-basis: calc(100% - 45px - 10px);
+  }
+
+  #skill .rate {
+    height: 15px;
+    font-size: 15px;
+  }
+  #skill .rate:before, #skill .rate:after {
+    height: 15px;
+    line-height: 15px;
+  }
+  #skill .rate1:after {
+    width: 15px;
+  }
+  #skill .rate2:after {
+    width: 30px;
+  }
+  #skill .rate3:after {
+    width: 45px;
+  }
+  #skill .rate4:after {
+    width: 60px;
+  }
+  #skill .rate5:after {
+    width: 75px;
+  }
+
+  #works .card {
+    width: 100%;
+  }
+  #works .card-caption-title {
+    font-size: 12px;
+  }
+  #works .card-caption-info {
+    font-size: 11px;
+  }
+
+  #contact .section-desc {
+    font-size: 15px;
+  }
+ 
+  #footer .inner {
+    padding: 20px 0;
+  }
+  #footer .footer-link li {
+    font-size: 10px;
+    padding: 0 10px;
+    margin-bottom: 5px;
+  }
+}
